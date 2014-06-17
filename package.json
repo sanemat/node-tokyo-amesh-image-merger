@@ -1,0 +1,35 @@
+{
+  "name": "tokyo-amesh-image-merger",
+  "description": "The best module ever.",
+  "version": "0.0.0",
+  "homepage": "https://github.com/sanemat/tokyo-amesh-image-merger",
+  "bugs": "https://github.com/sanemat/tokyo-amesh-image-merger/issues",
+  "license": "MIT",
+  "main": "lib/tokyo-amesh-image-merger.js",
+  "author": {
+    "name": "sanemat",
+    "email": "o.gata.ken@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sanemat/tokyo-amesh-image-merger"
+  },
+  "keywords":[],
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.6.2",
+    "gulp-jscs": "^0.4.2",
+    "gulp-jshint": "^1.5.5",
+    "gulp-mocha": "^0.4.1",
+    "gulp-istanbul": "^0.2.0",
+    "coveralls": "^2.10.0",
+    "should": "^3.3.1",
+    "jshint-stylish": "^0.2.0",
+    "gulp-load-plugins": "^0.5.1",
+    "gulp-plumber": "^0.6.2"
+  },
+  "scripts": {
+    "coveralls": "gulp test && cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "test": "gulp test"
+  }
+}
